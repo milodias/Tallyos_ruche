@@ -1,0 +1,23 @@
+.logIn {
+    margin: 15% 20%;
+    padding : 10%;
+    border: 2px dashed blue;
+    border-radius: 50px;
+    background-color: rgb(223, 221, 142);
+}
+
+header {
+    margin : 5% 0;
+}
+
+.titre {
+    margin: 2% 0;
+}
+
+.log{
+    margin: 10px 0;
+}
+
+.info-titre {
+    padding-top: 7px;
+}

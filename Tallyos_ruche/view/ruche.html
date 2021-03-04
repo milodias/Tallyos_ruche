@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="ruche.css">
+    <title>Ruche contrôleur</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="titre ">
+                <h1>Maquette : page des ruches</h1>
+            </div>
+            <div class="row border border-dark">
+                <div class="col-9 d-flex justify-content-stretch align-items-center">
+                    <nav class="nav nav-pills nav-justified">
+                        <a class="flex-sm-fill text-sm-center nav-link disabled" href="#" id='welcome'>Company</a>
+                        <a class="flex-sm-fill text-sm-center nav-link" href="#">Ruches</a>
+                        <a class="flex-sm-fill text-sm-center nav-link" href="information_ruche.html">Informations</a>
+                      </nav>
+                </div>
+                <div class="col-3 d-flex justify-content-end align-items-center ">
+                    <button class="btn-primary">Déconexion</button>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <button class= 'btn btn-success' id='btn-add'> Ajouter une ruche </button>
+            <div class="row">
+                <div id='tab_ruche' class="col-12">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nom</th>
+                                <th scope="col">Latitude</th>
+                                <th scope="col">Longitude</th>
+                                <th scope="col"></th>
+                            </tr>
+
+                        </thead>
+                        <tbody id='tbody'>
+                            
+                            
+                        </tbody>
+                    </table>
+
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+            </div>
+            <!-- <div class="poppin">
+                <h3>Ajouter une ruche</h3>
+                <label for="nom">Nom</label>
+                <input type="text" name="nom" id='nom'>
+                <label for="Latitude">Latitude</label>
+                <input type="text" name="Latitude" id='latitude'>
+                <label for="longitude">Longitude</label>
+                <input type="text" name="logitude" id='longitude'>
+            </div> -->
+
+            <!-- <div class='poppin'>
+                <div class="form-group">
+                  <label for="nom">Nom</label>
+                  <input type="text" class="form-control" id="nom"  placeholder="Nom de la ruche">
+                </div>
+                <div class="form-group">
+                  <label for="latitude">Latitude</label>
+                  <input type="text" class="form-control" id="latitude" placeholder="49.100000">
+                </div>
+                <div class="form-group">
+                  <label for="longitude">Longitude</label>
+                  <input type="text" class="form-control" id="longitude" placeholder="49.100000">
+                </div>
+                <button type="submit" class="btn btn-primary">Ajouter</button>
+            </div> -->
+              
+        </div>
+
+
+    </div>
+
+
+    <script src="ruche.js"></script>
+</body>
+
+</html>
